@@ -1,4 +1,0 @@
-repository "geospatialcreatordemos@samuelnihoul@cloud"
-  path "/"
-    smartbranch "/main/master3/master6" 
-     
