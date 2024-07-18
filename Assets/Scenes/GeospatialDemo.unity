@@ -3809,6 +3809,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1685198988}
   - component: {fileID: 1685198987}
+  - component: {fileID: 1685198989}
   m_Layer: 0
   m_Name: ZombieSpawner
   m_TagString: Untagged
@@ -3840,12 +3841,33 @@ Transform:
   m_GameObject: {fileID: 1685198986}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -22.76, y: 60.3, z: -5.63}
+  m_LocalPosition: {x: -22.76, y: 34.06, z: 11.9}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1685198989
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1685198986}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0b3d0e3f52dfe4243aceaba16f9cd0c7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _altitudeOffset: NaN
+  _latitude: 46.717658245936306
+  _longitude: -71.27349681368452
+  _altitude: 34.060053028166294
+  _altitudeType: 1
+  _useEditorAltitudeOverride: 0
+  _editorAltitudeOverride: 0
+  _anchorManager: {fileID: 424852987}
+  Origin: {fileID: 1677693322}
 --- !u!1001 &1697787171
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5055,6 +5077,26 @@ PrefabInstance:
       objectReference: {fileID: 1677693322}
     - target: {fileID: 1879871361652244465, guid: 6b5b8704549688b47b30ba8cd57bc180,
         type: 3}
+      propertyPath: _altitude
+      value: 42.000047768466175
+      objectReference: {fileID: 0}
+    - target: {fileID: 1879871361652244465, guid: 6b5b8704549688b47b30ba8cd57bc180,
+        type: 3}
+      propertyPath: _latitude
+      value: 46.71762775087599
+      objectReference: {fileID: 0}
+    - target: {fileID: 1879871361652244465, guid: 6b5b8704549688b47b30ba8cd57bc180,
+        type: 3}
+      propertyPath: _longitude
+      value: -71.27350243728107
+      objectReference: {fileID: 0}
+    - target: {fileID: 1879871361652244465, guid: 6b5b8704549688b47b30ba8cd57bc180,
+        type: 3}
+      propertyPath: _altitudeType
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1879871361652244465, guid: 6b5b8704549688b47b30ba8cd57bc180,
+        type: 3}
       propertyPath: _anchorManager
       value: 
       objectReference: {fileID: 424852987}
@@ -5079,17 +5121,17 @@ PrefabInstance:
     - target: {fileID: 2397317578653419091, guid: c72c6c9e29b1b56459a4431b1ce45748,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -17
+      value: -17.8
       objectReference: {fileID: 0}
     - target: {fileID: 2397317578653419091, guid: c72c6c9e29b1b56459a4431b1ce45748,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 38
+      value: 40.41
       objectReference: {fileID: 0}
     - target: {fileID: 2397317578653419091, guid: c72c6c9e29b1b56459a4431b1ce45748,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -2
+      value: 0.68
       objectReference: {fileID: 0}
     - target: {fileID: 2397317578653419091, guid: c72c6c9e29b1b56459a4431b1ce45748,
         type: 3}
@@ -5131,6 +5173,26 @@ PrefabInstance:
       propertyPath: Origin
       value: 
       objectReference: {fileID: 1677693322}
+    - target: {fileID: 7998159674929268001, guid: c72c6c9e29b1b56459a4431b1ce45748,
+        type: 3}
+      propertyPath: _altitude
+      value: 38.00002293009311
+      objectReference: {fileID: 0}
+    - target: {fileID: 7998159674929268001, guid: c72c6c9e29b1b56459a4431b1ce45748,
+        type: 3}
+      propertyPath: _latitude
+      value: 46.71753320780746
+      objectReference: {fileID: 0}
+    - target: {fileID: 7998159674929268001, guid: c72c6c9e29b1b56459a4431b1ce45748,
+        type: 3}
+      propertyPath: _longitude
+      value: -71.27342147570896
+      objectReference: {fileID: 0}
+    - target: {fileID: 7998159674929268001, guid: c72c6c9e29b1b56459a4431b1ce45748,
+        type: 3}
+      propertyPath: _altitudeType
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7998159674929268001, guid: c72c6c9e29b1b56459a4431b1ce45748,
         type: 3}
       propertyPath: _anchorManager
@@ -5244,6 +5306,26 @@ PrefabInstance:
       propertyPath: Origin
       value: 
       objectReference: {fileID: 1677693322}
+    - target: {fileID: 9054510785625768589, guid: fa8b6c7b135e9ea4aa1d866ebaca1055,
+        type: 3}
+      propertyPath: _altitude
+      value: 39.600043730810285
+      objectReference: {fileID: 0}
+    - target: {fileID: 9054510785625768589, guid: fa8b6c7b135e9ea4aa1d866ebaca1055,
+        type: 3}
+      propertyPath: _latitude
+      value: 46.717597076050765
+      objectReference: {fileID: 0}
+    - target: {fileID: 9054510785625768589, guid: fa8b6c7b135e9ea4aa1d866ebaca1055,
+        type: 3}
+      propertyPath: _longitude
+      value: -71.27350649182084
+      objectReference: {fileID: 0}
+    - target: {fileID: 9054510785625768589, guid: fa8b6c7b135e9ea4aa1d866ebaca1055,
+        type: 3}
+      propertyPath: _altitudeType
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 9054510785625768589, guid: fa8b6c7b135e9ea4aa1d866ebaca1055,
         type: 3}
       propertyPath: _anchorManager
