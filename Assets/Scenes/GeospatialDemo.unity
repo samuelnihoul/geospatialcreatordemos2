@@ -3841,7 +3841,7 @@ Transform:
   m_GameObject: {fileID: 1685198986}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -22.76, y: 34.06, z: 11.9}
+  m_LocalPosition: {x: -14.9, y: 34.06, z: -19.4}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -3860,9 +3860,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _altitudeOffset: NaN
-  _latitude: 46.717658245936306
-  _longitude: -71.27349681368452
-  _altitude: 34.060053028166294
+  _latitude: 46.717376685063705
+  _longitude: -71.27339400860907
+  _altitude: 34.06004829052836
   _altitudeType: 1
   _useEditorAltitudeOverride: 0
   _editorAltitudeOverride: 0
@@ -5120,18 +5120,33 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2397317578653419091, guid: c72c6c9e29b1b56459a4431b1ce45748,
         type: 3}
+      propertyPath: m_LocalScale.x
+      value: 2.5273
+      objectReference: {fileID: 0}
+    - target: {fileID: 2397317578653419091, guid: c72c6c9e29b1b56459a4431b1ce45748,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 2.5273
+      objectReference: {fileID: 0}
+    - target: {fileID: 2397317578653419091, guid: c72c6c9e29b1b56459a4431b1ce45748,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 2.5273
+      objectReference: {fileID: 0}
+    - target: {fileID: 2397317578653419091, guid: c72c6c9e29b1b56459a4431b1ce45748,
+        type: 3}
       propertyPath: m_LocalPosition.x
-      value: -17.8
+      value: -4.1
       objectReference: {fileID: 0}
     - target: {fileID: 2397317578653419091, guid: c72c6c9e29b1b56459a4431b1ce45748,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 40.41
+      value: 38
       objectReference: {fileID: 0}
     - target: {fileID: 2397317578653419091, guid: c72c6c9e29b1b56459a4431b1ce45748,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0.68
+      value: -21.5
       objectReference: {fileID: 0}
     - target: {fileID: 2397317578653419091, guid: c72c6c9e29b1b56459a4431b1ce45748,
         type: 3}
@@ -5239,17 +5254,17 @@ PrefabInstance:
     - target: {fileID: 1659550743662379919, guid: fa8b6c7b135e9ea4aa1d866ebaca1055,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -23.5
+      value: -4.0999985
       objectReference: {fileID: 0}
     - target: {fileID: 1659550743662379919, guid: fa8b6c7b135e9ea4aa1d866ebaca1055,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 39.6
+      value: 39.15921
       objectReference: {fileID: 0}
     - target: {fileID: 1659550743662379919, guid: fa8b6c7b135e9ea4aa1d866ebaca1055,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 5.1
+      value: -18.799877
       objectReference: {fileID: 0}
     - target: {fileID: 1659550743662379919, guid: fa8b6c7b135e9ea4aa1d866ebaca1055,
         type: 3}
@@ -5309,17 +5324,17 @@ PrefabInstance:
     - target: {fileID: 9054510785625768589, guid: fa8b6c7b135e9ea4aa1d866ebaca1055,
         type: 3}
       propertyPath: _altitude
-      value: 39.600043730810285
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 9054510785625768589, guid: fa8b6c7b135e9ea4aa1d866ebaca1055,
         type: 3}
       propertyPath: _latitude
-      value: 46.717597076050765
+      value: 46.71738208379158
       objectReference: {fileID: 0}
     - target: {fileID: 9054510785625768589, guid: fa8b6c7b135e9ea4aa1d866ebaca1055,
         type: 3}
       propertyPath: _longitude
-      value: -71.27350649182084
+      value: -71.27325275181536
       objectReference: {fileID: 0}
     - target: {fileID: 9054510785625768589, guid: fa8b6c7b135e9ea4aa1d866ebaca1055,
         type: 3}
@@ -5331,6 +5346,16 @@ PrefabInstance:
       propertyPath: _anchorManager
       value: 
       objectReference: {fileID: 424852987}
+    - target: {fileID: 9054510785625768589, guid: fa8b6c7b135e9ea4aa1d866ebaca1055,
+        type: 3}
+      propertyPath: _editorAltitudeOverride
+      value: 39.159239266999066
+      objectReference: {fileID: 0}
+    - target: {fileID: 9054510785625768589, guid: fa8b6c7b135e9ea4aa1d866ebaca1055,
+        type: 3}
+      propertyPath: _useEditorAltitudeOverride
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
