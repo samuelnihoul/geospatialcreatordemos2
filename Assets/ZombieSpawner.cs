@@ -20,7 +20,6 @@ public class SpawnManager : MonoBehaviour
 
             // Spawn prefab
             SpawnPrefab();
-            spawnInterval *= .99f;
         }
     }
 
