@@ -3523,6 +3523,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SphereGemLarge
       objectReference: {fileID: 0}
+    - target: {fileID: 1000010728489230, guid: 8b40cffea67202d4bbf662b25de4c94a, type: 3}
+      propertyPath: m_TagString
+      value: hint
+      objectReference: {fileID: 0}
     - target: {fileID: 4000013225348790, guid: 8b40cffea67202d4bbf662b25de4c94a, type: 3}
       propertyPath: m_LocalPosition.x
       value: -13.1595
@@ -4211,7 +4215,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -21.479969, y: 38.802113, z: -7.3399897}
-  m_LocalScale: {x: 0.1, y: 0.1, z: 0.1}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -4229,12 +4233,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _altitudeOffset: NaN
-  _latitude: 46.71748517150773
-  _longitude: -71.27348007053723
+  _latitude: 46.717485171506766
+  _longitude: -71.27348007054252
   _altitude: 0
   _altitudeType: 1
   _useEditorAltitudeOverride: 1
-  _editorAltitudeOverride: 38.80215291492641
+  _editorAltitudeOverride: 38.80215291399509
   _anchorManager: {fileID: 424852987}
   Origin: {fileID: 1677693322}
 --- !u!23 &1685198990
@@ -4286,7 +4290,7 @@ MeshFilter:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1685198986}
-  m_Mesh: {fileID: 4300008, guid: 34d1b8e01a0412f449dcefc77b05e27b, type: 3}
+  m_Mesh: {fileID: 10208, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!1001 &1697787171
 PrefabInstance:
   m_ObjectHideFlags: 0
