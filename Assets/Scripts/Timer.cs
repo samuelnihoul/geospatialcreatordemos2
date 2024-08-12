@@ -5,6 +5,7 @@ public class Timer : MonoBehaviour
 {
     public float timeRemaining = 60f; // Initial time in seconds
     private TextMeshProUGUI timerText;
+  public bool isGameStarted = false;
 
     private void Start()
     {
@@ -13,7 +14,7 @@ public class Timer : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (timeRemaining > 0)
+        if (timeRemaining > 0 && isGameStarted)
         {
             timeRemaining -= Time.deltaTime; // Reduce timeRemaining by deltaTime
 

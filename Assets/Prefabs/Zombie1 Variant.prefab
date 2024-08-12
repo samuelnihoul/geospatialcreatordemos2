@@ -105,11 +105,11 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 4493914613880827488, guid: 6dc4cf4496348884d8ee27743ae38562,
         type: 3}
       insertIndex: -1
-      addedObject: {fileID: 7998159674929268001}
+      addedObject: {fileID: 4091090867467617822}
     - targetCorrespondingSourceObject: {fileID: 4493914613880827488, guid: 6dc4cf4496348884d8ee27743ae38562,
         type: 3}
       insertIndex: -1
-      addedObject: {fileID: 4091090867467617822}
+      addedObject: {fileID: 5200332274481150575}
   m_SourcePrefab: {fileID: 100100000, guid: 6dc4cf4496348884d8ee27743ae38562, type: 3}
 --- !u!1 &1666229032271295552 stripped
 GameObject:
@@ -117,27 +117,6 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 2972998018014681632}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &7998159674929268001
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1666229032271295552}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0b3d0e3f52dfe4243aceaba16f9cd0c7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _altitudeOffset: NaN
-  _latitude: 43.57551215773063
-  _longitude: 1.4046621361061866
-  _altitude: 192.66992791369557
-  _altitudeType: 0
-  _useEditorAltitudeOverride: 0
-  _editorAltitudeOverride: 192.32023816090077
-  _anchorManager: {fileID: 0}
-  Origin: {fileID: 0}
 --- !u!114 &4091090867467617822
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -153,3 +132,19 @@ MonoBehaviour:
   speed: 1
   hp: 5
   altitudeCameraOffset: -2
+--- !u!111 &5200332274481150575
+Animation:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1666229032271295552}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Animation: {fileID: -6257440219318784398, guid: 59dbfb66512f63c4eb6e1e30e0603198,
+    type: 3}
+  m_Animations: []
+  m_WrapMode: 0
+  m_PlayAutomatically: 1
+  m_AnimatePhysics: 0
+  m_CullingType: 0
