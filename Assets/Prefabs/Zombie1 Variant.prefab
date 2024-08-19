@@ -96,7 +96,7 @@ PrefabInstance:
     - target: {fileID: 7389507112651452681, guid: 6dc4cf4496348884d8ee27743ae38562,
         type: 3}
       propertyPath: m_Enabled
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -106,10 +106,6 @@ PrefabInstance:
         type: 3}
       insertIndex: -1
       addedObject: {fileID: 4091090867467617822}
-    - targetCorrespondingSourceObject: {fileID: 4493914613880827488, guid: 6dc4cf4496348884d8ee27743ae38562,
-        type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 5200332274481150575}
   m_SourcePrefab: {fileID: 100100000, guid: 6dc4cf4496348884d8ee27743ae38562, type: 3}
 --- !u!1 &1666229032271295552 stripped
 GameObject:
@@ -132,19 +128,3 @@ MonoBehaviour:
   speed: 1
   hp: 5
   altitudeCameraOffset: -2
---- !u!111 &5200332274481150575
-Animation:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1666229032271295552}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Animation: {fileID: -6257440219318784398, guid: 59dbfb66512f63c4eb6e1e30e0603198,
-    type: 3}
-  m_Animations: []
-  m_WrapMode: 0
-  m_PlayAutomatically: 1
-  m_AnimatePhysics: 0
-  m_CullingType: 0
