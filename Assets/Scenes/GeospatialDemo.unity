@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657826, g: 0.49641263, b: 0.57481676, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1636,13 +1636,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 39dca64a69d8c4dcc93bba725e6a3e72, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  force: 10000
+  force: 100000
   frequency: 0.5
-  initialOffset: {x: 0, y: 0, z: 1}
+  initialOffset: {x: 0, y: 0, z: 5}
   ballPrefab: {fileID: 5830950802613369557, guid: a8b1600e0640f4fbab5cf47ba198c16c,
     type: 3}
   lifeInSeconds: 15
-  enableShooting: 1
+  enableShooting: 0
 --- !u!4 &676641757
 Transform:
   m_ObjectHideFlags: 0
