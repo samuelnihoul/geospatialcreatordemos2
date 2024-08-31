@@ -57,16 +57,16 @@ public class TextDisplay : MonoBehaviour
         if (other.CompareTag("hint") && security == true)
         {
             StartCoroutine(IEShowHint());
-
+            debugText.text += "entered collision with hint \n";
             counter++;
-            debugText.text = counter.ToString();
+            debugText.text += "hintCounter" + counter.ToString() + "\n";
             // Get the hint number from the collided object
             int hintNumber;
             if (int.TryParse(other.name, out hintNumber))
             {
                 currentHint = hintNumber;
                 ShowHint(currentHint);
-                debugText.text = currentHint.ToString();
+                debugText.text = "hintCounter" + currentHint.ToString() + "\n";
             }
 
             Destroy(other.gameObject);
