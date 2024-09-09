@@ -27,7 +27,7 @@ public class Timer : MonoBehaviour
         }
         else
         {
-            // Time's up!
+            if(isGameStarted)
             timerText.text = "Time's Up!";
         }
     }
