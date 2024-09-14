@@ -1,0 +1,8 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <ui:VisualElement style="flex-grow: 1; background-image: url(&quot;project://database/Assets/2D%20Casual%20UI/Sprite/GUI.png?fileID=21300056&amp;guid=1eaee135ce037439d925cee5e41ce026&amp;type=3#GUI_28&quot;);">
+        <ui:Label tabindex="-1" text="ZOMBIESHOOOTR" parse-escape-sequences="true" display-tooltip-when-elided="true" name="Title" style="white-space: nowrap; -unity-text-align: middle-left; transform-origin: center; background-image: url(&quot;project://database/Assets/2D%20Casual%20UI/Sprite/GUI.png?fileID=21300026&amp;guid=1eaee135ce037439d925cee5e41ce026&amp;type=3#GUI_13&quot;);" />
+        <ui:Button text="Play Youssouf Home" parse-escape-sequences="true" display-tooltip-when-elided="true" name="PlayYoussoufHome" style="background-image: url(&quot;project://database/Assets/2D%20Casual%20UI/Sprite/GUI.png?fileID=21300022&amp;guid=1eaee135ce037439d925cee5e41ce026&amp;type=3#GUI_11&quot;);" />
+        <ui:Button text="Button" parse-escape-sequences="true" display-tooltip-when-elided="true" name="PlayQuaiPaquet" />
+        <ui:Button text="Button" parse-escape-sequences="true" display-tooltip-when-elided="true" name="PlayUniversity" />
+    </ui:VisualElement>
+</ui:UXML>
