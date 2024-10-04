@@ -53,4 +53,6 @@ ARFoundationRemoteInstaller
 /Assets/Plugins
 .plastic
 Assets\Prefabs\Gems
+ProjectSettings
+Assets/Settings
 Assets/UI Toolkit
