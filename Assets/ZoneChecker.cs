@@ -2,7 +2,7 @@ using TMPro;
 using UnityEngine;
 public class ZoneChecker : MonoBehaviour
 {
-    private TextMeshProUGUI t; [SerializeField] public string zone = "No Zone";
+    private TextMeshProUGUI t; [SerializeField] public string zone = "Find the starting point and get inside";
     public float objectif = 40f;
     private Timer timerScript; // Start is called before the first frame update
     void Start()

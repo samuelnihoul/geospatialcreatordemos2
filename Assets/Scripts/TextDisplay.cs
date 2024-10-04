@@ -1,15 +1,17 @@
 using System.Collections;
 using System.Collections.Generic;
 using TMPro;
+using UnityEngine.UIElements;   
 using UnityEngine;
 
 public class TextDisplay : MonoBehaviour
 {
+    private VisualElement debugUI;
     private int counter = 0;
     public int currentHint = 1; // Initial hint number
     private TextMeshProUGUI hint; //the int game object
     private bool coroutineIsPlay;
-    private TextMeshProUGUI debugText;
+    private Label debugText;
     private bool security = false;
     private string zone = "No Zone";
     private Dictionary<int, string> hints1 = new Dictionary<int, string>()
@@ -40,11 +42,16 @@ public class TextDisplay : MonoBehaviour
         {"Youssouf Home","Welcome to Youssouf home, the home of the creator of the game. He studied there for 3 years." },
         {"No Zone","Welcome to the game. You are not in a game zone yet." }
     };
+    private void Awake()
+    {
+        debugUI = GetComponent<UIDocument>().rootVisualElement;
+        debugText = debugUI.Q<Label>("debugText");
+        debugText.text="App Started";
+    }
     private void Start()
     {
         zone = GameObject.FindGameObjectWithTag("GameController").GetComponent<TextMeshProUGUI>().text;
         hint = GameObject.FindGameObjectWithTag("hintText").GetComponent<TextMeshProUGUI>();
-        debugText = GameObject.FindGameObjectWithTag("EditorOnly").GetComponent<TextMeshProUGUI>();
 
         hint.text = historicalInfo[zone];
         StartCoroutine(SecurtiyAwakeCollisionWithGemmes());
