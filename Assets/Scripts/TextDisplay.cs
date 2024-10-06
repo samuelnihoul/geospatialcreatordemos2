@@ -14,34 +14,10 @@ public class TextDisplay : MonoBehaviour
     private Label debugText;
     private bool security = false;
     private string zone = "No Zone";
-    private Dictionary<int, string> hints1 = new Dictionary<int, string>()
-    {
-        {1,"In the middle of the next street" },
-        {3,"At the end of this road"},
-        {2,"At the biggest building" },
-        {8,"Near a statue" },
-        {7,"In the corner of a nearby parking" },
-        {9,"In the entrance of a nearby parking" },
-        {5,"In the entrace of a nearby parking" },
-        {4,"Somewhere in this parking" },
-        {0,"In the next street/parking" },
-        {6,"Congrats this is the last hint" },
-    };
-    private Dictionary<int, string> hints3 = new Dictionary<int, string>()
-    {
-        {10,"10"}
-    };
-    private Dictionary<int, string> hints2 = new Dictionary<int, string>()
-    {
-        {1,"ici indice 1, un autre indice se trouve dans le plus veil endroit de la région"}
-    };
-    private Dictionary<string, string> historicalInfo = new Dictionary<string, string>()
-    {
-        {"1","Welcome to UQAR Lévis. Fondé en 1980, le campus de Lévis de l'UQAR est spécialisé dans la formation continue à temps partie en administration, en sciences infirmières et en sciences humaines." },
-        {"2","Welcome to quai paquet. En avril 1864, le conseil municipal de Lévis décrète ce lieu comme terminus du traversier. Le chemin de fer Intercolonial atteint l'endroit en 1882. En 1912, le gouvernement du Canada entreprend la construction d'un quai en eau profond en comblant l'espace entre des quais déjà présents dont celui de la compagnie Paquet. L'entreprise y effectue du transbordement de charbon (avant 1950), de sel et de ciment1." },
-        {"Youssouf Home","Welcome to Youssouf home, the home of the creator of the game. He studied there for 3 years." },
-        {"No Zone","Welcome to the game. You are not in a game zone yet." }
-    };
+    private Dictionary<int, string> hintsYoussoufHome = HintData.hintYoussoufHome;
+    private Dictionary<int, string> hintsQuaiPaquet = HintData.hintsQuaiPaquet;
+    private Dictionary<int, string> hintsUQAR = HintData.hintsUQAR;
+    private Dictionary<string, string> historicalInfo = HistoricalInfo.historicalInfo;
     private void Awake()
     {
         debugUI = GetComponent<UIDocument>().rootVisualElement;
@@ -64,16 +40,16 @@ public class TextDisplay : MonoBehaviour
         if (other.CompareTag("hint") && security == true)
         {
             StartCoroutine(IEShowHint());
-            //debugText.text += "entered collision with hint \n";
+            debugText.text += "entered collision with hint \n";
             counter++;
-            //debugText.text += "hintCounter" + counter.ToString() + "\n";
+            debugText.text += "hintCounter" + counter.ToString() + "\n";
             // Get the hint number from the collided object
             int hintNumber;
             if (int.TryParse(other.name, out hintNumber))
             {
                 currentHint = hintNumber;
                 ShowHint(currentHint);
-               // debugText.text = "hintCounter" + currentHint.ToString() + "\n";
+                debugText.text = "hintCounter" + currentHint.ToString() + "\n";
             }
 
             Destroy(other.gameObject);
@@ -82,7 +58,7 @@ public class TextDisplay : MonoBehaviour
 
     private void ShowHint(int hintNumber)
     {
-        hint.text = hints1[hintNumber] + " " + counter + "/10";
+        hint.text = hintsYoussoufHome[hintNumber] + " " + counter + "/10";
     }
     private void Update()
     {
