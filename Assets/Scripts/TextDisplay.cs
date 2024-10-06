@@ -46,13 +46,13 @@ public class TextDisplay : MonoBehaviour
     {
         debugUI = GetComponent<UIDocument>().rootVisualElement;
         debugText = debugUI.Q<Label>("debugText");
-        debugText.text="App Started";
     }
     private void Start()
     {
         zone = GameObject.FindGameObjectWithTag("GameController").GetComponent<TextMeshProUGUI>().text;
         hint = GameObject.FindGameObjectWithTag("hintText").GetComponent<TextMeshProUGUI>();
 
+        debugText.text="App Started";
         hint.text = historicalInfo[zone];
         StartCoroutine(SecurtiyAwakeCollisionWithGemmes());
 
@@ -64,16 +64,16 @@ public class TextDisplay : MonoBehaviour
         if (other.CompareTag("hint") && security == true)
         {
             StartCoroutine(IEShowHint());
-            debugText.text += "entered collision with hint \n";
+            //debugText.text += "entered collision with hint \n";
             counter++;
-            debugText.text += "hintCounter" + counter.ToString() + "\n";
+            //debugText.text += "hintCounter" + counter.ToString() + "\n";
             // Get the hint number from the collided object
             int hintNumber;
             if (int.TryParse(other.name, out hintNumber))
             {
                 currentHint = hintNumber;
                 ShowHint(currentHint);
-                debugText.text = "hintCounter" + currentHint.ToString() + "\n";
+               // debugText.text = "hintCounter" + currentHint.ToString() + "\n";
             }
 
             Destroy(other.gameObject);
