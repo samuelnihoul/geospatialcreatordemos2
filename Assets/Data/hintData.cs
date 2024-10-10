@@ -1,4 +1,4 @@
-using System.Collections.Generic
+using System.Collections.Generic;
 class HintData
 {
     public static Dictionary<int, string> hintYoussoufHome = new Dictionary<int, string>
