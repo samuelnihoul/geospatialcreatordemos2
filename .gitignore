@@ -41,18 +41,4 @@ sysinfo.txt
 *.unitypackage
 .DS_Store
 
-Packages/com.kyrylokuzyk.arfoundationremote
-ARFoundationRemoteCompanionApp/
-AurynSky/
-Zombie
-Assets/Prefabs/Gems/
-ARFoundationRemoteInstaller
-/Assets/Prefabs/Gems
-/Assets/2D Casual UI
-Assets/2D Casual UI.meta
-/Assets/Plugins
 .plastic
-Assets/UI Toolkit
-Assets/Resources.meta
-Assets/Resources
-Assets/XR
